@@ -3,7 +3,7 @@ CREATE DATABASE store_database
 CREATE TABLE customer(
     ID                                  BIGSERIAL,
     customer_email                      VARCHAR(100)UNIQUE,
-    customer_phone_number               VARCHAR(11),
+    customer_phone_number               VARCHAR(12),
     customer_password                   VARCHAR(200),
     CONSTRAINT customer_ID              PRIMARY KEY (ID),
     CONSTRAINT customer_unique_ID       UNIQUE (customer_email, customer_phone_number, customer_password)
